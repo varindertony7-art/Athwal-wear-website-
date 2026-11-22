@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATHWAL WEAR</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#eeeae2;color:#171713;font-family:Arial,sans-serif}
+header{padding:25px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ccc}
+.logo{font-size:23px;font-weight:bold;letter-spacing:4px}
+nav a{color:#171713;text-decoration:none;margin-left:20px;font-size:12px}
+.hero{padding:80px 7%;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.tag{letter-spacing:3px;font-size:11px;color:#777}
+h1{font-size:clamp(50px,8vw,90px);line-height:1;margin:25px 0}
+h1 span{font-family:Georgia,serif;font-style:italic}
+p{color:#777;line-height:1.8;font-size:14px}
+.btn{display:inline-block;background:#171713;color:white;padding:16px 25px;text-decoration:none;margin-top:25px;font-size:11px;letter-spacing:2px}
+.hero img{width:100%;height:500px;object-fit:cover;background:#d5cec2}
+.collection{padding:70px 7%}
+h2{font-size:40px;font-weight:500}
+.sub{font-size:11px;letter-spacing:3px;margin:12px 0 30px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card img{width:100%;height:350px;object-fit:cover;background:#d5cec2}
+.card h3{font-size:12px;letter-spacing:2px;margin-top:12px}
+.card p{font-size:12px;margin-top:6px}
+.about{background:#171713;color:#eeeae2;text-align:center;padding:90px 7%}
+.about h2{font-family:Georgia,serif;font-style:italic;margin:20px 0}
+.about p{color:#bbb}
+footer{padding:30px 7%;display:flex;justify-content:space-between;font-size:11px;letter-spacing:2px}
+@media(max-width:700px){
+.hero{grid-template-columns:1fr;padding:55px 6%}
+.hero img{height:380px}
+.collection{padding:55px 6%}
+.grid{grid-template-columns:1fr 1fr;gap:12px}
+.card img{height:230px}
+h2{font-size:32px}
+footer{flex-direction:column;gap:12px;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">ATHWAL.</div>
+<nav>
+<a href="#home">HOME</a>
+<a href="#collection">COLLECTION</a>
+<a href="#about">ABOUT</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div>
+<div class="tag">INDEPENDENT FASHION LABEL</div>
+<h1>BEYOND<br>THE <span>ORDINARY.</span></h1>
+<p>A new perspective on everyday fashion. Thoughtfully styled. Effortlessly expressed. Welcome to ATHWAL WEAR.</p>
+<a class="btn" href="#collection">EXPLORE COLLECTION ↗</a>
+</div>
+<img src="cover.jpg" alt="ATHWAL WEAR">
+</section>
+
+<section class="collection" id="collection">
+<h2>Selected Looks.</h2>
+<p class="sub">AN EXPRESSION OF STYLE</p>
+<div class="grid">
+<div class="card">
+<img src="look-01.jpg" alt="Fashion look 1">
+<h3>01 / EVERYDAY FORM</h3>
+<p>Minimal · Modern</p>
+</div>
+<div class="card">
+<img src="look-02.jpg" alt="Fashion look 2">
+<h3>02 / STREET CULTURE</h3>
+<p>Relaxed · Expressive</p>
+</div>
+<div class="card">
+<img src="look-03.jpg" alt="Fashion look 3">
+<h3>03 / TIMELESS STYLE</h3>
+<p>Effortless · Refined</p>
+</div>
+</div>
+</section>
+
+<section class="about" id="about">
+<p>THE ATHWAL PHILOSOPHY</p>
+<h2>Style is not about fitting in.<br>It's about being yourself.</h2>
+<p>Less noise. More expression. Always original.</p>
+</section>
+
+<footer>
+<strong>ATHWAL WEAR.</strong>
+<span>BEYOND ORDINARY · 2026</span>
+</footer>
+
+</body>
+</html>
