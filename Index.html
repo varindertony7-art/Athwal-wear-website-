@@ -3,233 +3,95 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#eeeae2">
-<title>ATHWAL WEAR — Beyond Ordinary</title>
+<title>ATHWAL WEAR</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
-
-:root {
-  --cream:#eeeae2;
-  --black:#171713;
-  --muted:#77746d;
-}
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  background:var(--cream);
-  color:var(--black);
-  font-family:'DM Sans',sans-serif;
-}
-a{color:inherit;text-decoration:none}
-header{
-  height:78px;padding:0 7%;
-  display:flex;align-items:center;
-  justify-content:space-between;
-  border-bottom:1px solid #d8d3c9;
-}
-.logo{
-  font-size:21px;font-weight:700;
-  letter-spacing:4px;
-}
-nav{display:flex;gap:32px;align-items:center}
-nav a{
-  font-size:11px;letter-spacing:2px;
-  text-transform:uppercase;
-}
-nav a:hover{opacity:.5}
-.hero{
-  min-height:670px;
-  padding:70px 7%;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:45px;align-items:center;
-}
-.tag{
-  font-size:10px;letter-spacing:4px;
-  color:var(--muted);text-transform:uppercase;
-}
-h1{
-  font-size:clamp(55px,8vw,105px);
-  line-height:.98;letter-spacing:-5px;
-  margin:28px 0;
-  font-weight:500;
-}
-h1 em{
-  font-family:'Playfair Display',serif;
-  font-weight:500;
-}
-.hero p{
-  max-width:360px;line-height:1.9;
-  font-size:13px;color:var(--muted);
-}
-.cta{
-  display:inline-block;margin-top:35px;
-  background:var(--black);color:white;
-  padding:17px 28px;
-  font-size:10px;letter-spacing:2px;
-  text-transform:uppercase;
-  transition:.3s;
-}
-.cta:hover{background:#5c554b;transform:translateY(-3px)}
-.hero-image{
-  height:570px;position:relative;
-  background:#d8d0c3;overflow:hidden;
-}
-.hero-image img{
-  width:100%;height:100%;object-fit:cover;
-  transition:transform .8s;
-}
-.hero-image:hover img{transform:scale(1.04)}
-.hero-image span{
-  position:absolute;bottom:20px;left:20px;
-  background:var(--cream);padding:12px 17px;
-  font-size:10px;letter-spacing:2px;
-}
-.section{padding:85px 7%}
-.section-head{
-  display:flex;justify-content:space-between;
-  align-items:end;margin-bottom:35px;
-}
-.section-head h2{
-  font-size:clamp(32px,5vw,52px);
-  font-weight:500;letter-spacing:-2px;
-}
-.section-head p{
-  color:var(--muted);font-size:11px;
-}
-.grid{
-  display:grid;grid-template-columns:repeat(3,1fr);
-  gap:18px;
-}
-.card-image{
-  height:390px;background:#ddd5c8;overflow:hidden;
-}
-.card-image img{
-  width:100%;height:100%;object-fit:cover;
-  transition:transform .7s;
-}
-.card:hover img{transform:scale(1.05)}
-.card h3{
-  margin-top:17px;font-size:12px;
-  letter-spacing:2px;font-weight:600;
-}
-.card p{
-  margin-top:7px;color:var(--muted);
-  font-size:11px;
-}
-.manifesto{
-  background:var(--black);color:var(--cream);
-  padding:105px 10%;text-align:center;
-}
-.manifesto small{
-  font-size:10px;letter-spacing:4px;color:#aaa;
-}
-.manifesto h2{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(35px,6vw,70px);
-  font-weight:500;margin:25px 0;
-}
-.manifesto p{
-  font-size:12px;color:#aaa;line-height:2;
-}
-footer{
-  padding:40px 7%;
-  display:flex;justify-content:space-between;
-  align-items:center;gap:20px;
-  font-size:10px;letter-spacing:2px;
-}
-footer p{color:var(--muted)}
+body{background:#eeeae2;color:#171713;font-family:Arial,sans-serif}
+header{padding:25px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ccc}
+.logo{font-size:23px;font-weight:bold;letter-spacing:4px}
+nav a{color:#171713;text-decoration:none;margin-left:20px;font-size:12px}
+.hero{padding:80px 7%;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.tag{letter-spacing:3px;font-size:11px;color:#777}
+h1{font-size:clamp(50px,8vw,90px);line-height:1;margin:25px 0}
+h1 span{font-family:Georgia,serif;font-style:italic}
+p{color:#777;line-height:1.8;font-size:14px}
+.btn{display:inline-block;background:#171713;color:white;padding:16px 25px;text-decoration:none;margin-top:25px;font-size:11px;letter-spacing:2px}
+.hero img{width:100%;height:500px;object-fit:cover;background:#d5cec2}
+.collection{padding:70px 7%}
+h2{font-size:40px;font-weight:500}
+.sub{font-size:11px;letter-spacing:3px;margin:12px 0 30px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card img{width:100%;height:350px;object-fit:cover;background:#d5cec2}
+.card h3{font-size:12px;letter-spacing:2px;margin-top:12px}
+.card p{font-size:12px;margin-top:6px}
+.about{background:#171713;color:#eeeae2;text-align:center;padding:90px 7%}
+.about h2{font-family:Georgia,serif;font-style:italic;margin:20px 0}
+.about p{color:#bbb}
+footer{padding:30px 7%;display:flex;justify-content:space-between;font-size:11px;letter-spacing:2px}
 @media(max-width:700px){
-  header{height:68px;padding:0 5%}
-  .logo{font-size:17px;letter-spacing:3px}
-  nav{gap:15px}
-  nav a{font-size:9px;letter-spacing:1px}
-  .hero{
-    padding:55px 6%;grid-template-columns:1fr;
-    gap:35px;min-height:auto;
-  }
-  h1{font-size:67px;letter-spacing:-3px}
-  .hero-image{height:440px}
-  .section{padding:65px 6%}
-  .grid{grid-template-columns:1fr 1fr;gap:12px}
-  .card-image{height:260px}
-  .section-head{align-items:start;gap:10px}
-  .section-head p{max-width:120px;text-align:right}
-  footer{flex-direction:column;text-align:center}
+.hero{grid-template-columns:1fr;padding:55px 6%}
+.hero img{height:380px}
+.collection{padding:55px 6%}
+.grid{grid-template-columns:1fr 1fr;gap:12px}
+.card img{height:230px}
+h2{font-size:32px}
+footer{flex-direction:column;gap:12px;text-align:center}
 }
 </style>
 </head>
 <body>
 
 <header>
-  <a class="logo" href="index.html">ATHWAL.</a>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="gallery.html">Gallery ↗</a>
-  </nav>
+<div class="logo">ATHWAL.</div>
+<nav>
+<a href="#home">HOME</a>
+<a href="#collection">COLLECTION</a>
+<a href="#about">ABOUT</a>
+</nav>
 </header>
 
-<main>
-<section class="hero">
-  <div>
-    <span class="tag">Independent Fashion Label · Est. 2026</span>
-    <h1>BEYOND<br>THE <em>ORDINARY.</em></h1>
-    <p>
-      A new perspective on everyday fashion.
-      Thoughtfully styled. Effortlessly expressed.
-      Welcome to the world of ATHWAL WEAR.
-    </p>
-    <a href="gallery.html" class="cta">Explore Collection ↗</a>
-  </div>
-  <div class="hero-image">
-    <img src="cover.jpg" alt="ATHWAL Wear fashion campaign">
-    <span>THE NEW PERSPECTIVE — 2026</span>
-  </div>
+<section class="hero" id="home">
+<div>
+<div class="tag">INDEPENDENT FASHION LABEL</div>
+<h1>BEYOND<br>THE <span>ORDINARY.</span></h1>
+<p>A new perspective on everyday fashion. Thoughtfully styled. Effortlessly expressed. Welcome to ATHWAL WEAR.</p>
+<a class="btn" href="#collection">EXPLORE COLLECTION ↗</a>
+</div>
+<img src="cover.jpg" alt="ATHWAL WEAR">
 </section>
 
-<section class="section">
-  <div class="section-head">
-    <h2>Selected Looks.</h2>
-    <p>AN EXPRESSION OF STYLE</p>
-  </div>
-  <div class="grid">
-    <a class="card" href="gallery.html">
-      <div class="card-image">
-        <img src="look-01.jpg" alt="Fashion look one">
-      </div>
-      <h3>01 / EVERYDAY FORM</h3>
-      <p>Minimal · Modern</p>
-    </a>
-    <a class="card" href="gallery.html">
-      <div class="card-image">
-        <img src="look-02.jpg" alt="Fashion look two">
-      </div>
-      <h3>02 / STREET CULTURE</h3>
-      <p>Relaxed · Expressive</p>
-    </a>
-    <a class="card" href="gallery.html">
-      <div class="card-image">
-        <img src="look-03.jpg" alt="Fashion look three">
-      </div>
-      <h3>03 / TIMELESS STYLE</h3>
-      <p>Effortless · Refined</p>
-    </a>
-  </div>
+<section class="collection" id="collection">
+<h2>Selected Looks.</h2>
+<p class="sub">AN EXPRESSION OF STYLE</p>
+<div class="grid">
+<div class="card">
+<img src="look-01.jpg" alt="Fashion look 1">
+<h3>01 / EVERYDAY FORM</h3>
+<p>Minimal · Modern</p>
+</div>
+<div class="card">
+<img src="look-02.jpg" alt="Fashion look 2">
+<h3>02 / STREET CULTURE</h3>
+<p>Relaxed · Expressive</p>
+</div>
+<div class="card">
+<img src="look-03.jpg" alt="Fashion look 3">
+<h3>03 / TIMELESS STYLE</h3>
+<p>Effortless · Refined</p>
+</div>
+</div>
 </section>
 
-<section class="manifesto">
-  <small>THE ATHWAL PHILOSOPHY</small>
-  <h2>Style is not about fitting in.<br>It's about being yourself.</h2>
-  <p>Less noise. More expression. Always original.</p>
+<section class="about" id="about">
+<p>THE ATHWAL PHILOSOPHY</p>
+<h2>Style is not about fitting in.<br>It's about being yourself.</h2>
+<p>Less noise. More expression. Always original.</p>
 </section>
-</main>
 
 <footer>
-  <strong>ATHWAL WEAR.</strong>
-  <p>BEYOND ORDINARY · 2026</p>
-  <a href="gallery.html">EXPLORE GALLERY ↗</a>
+<strong>ATHWAL WEAR.</strong>
+<span>BEYOND ORDINARY · 2026</span>
 </footer>
 
 </body>
-  </html>
-  
+</html>
