@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#eeeae2">
+<title>Gallery — ATHWAL WEAR</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#eeeae2;color:#171713;font-family:Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+header{
+ height:75px;padding:0 7%;
+ display:flex;justify-content:space-between;
+ align-items:center;border-bottom:1px solid #d8d3c9
+}
+.logo{font-weight:bold;letter-spacing:4px;font-size:20px}
+nav{display:flex;gap:28px}
+nav a{font-size:11px;letter-spacing:2px}
+.intro{padding:75px 7% 45px}
+.intro small{letter-spacing:4px;color:#77746d;font-size:10px}
+h1{font-family:Georgia,serif;font-size:clamp(55px,9vw,100px);font-weight:normal;margin:22px 0}
+.intro p{font-size:13px;color:#77746d;line-height:2}
+.gallery{
+ padding:20px 7% 90px;
+ display:grid;grid-template-columns:repeat(3,1fr);
+ gap:18px;
+}
+.item{overflow:hidden}
+.item img{
+ display:block;width:100%;height:420px;
+ object-fit:cover;background:#d8d0c3;
+ transition:transform .6s;
+}
+.item:hover img{transform:scale(1.04)}
+.item p{
+ padding:15px 0;font-size:11px;
+ letter-spacing:2px;
+}
+footer{
+ padding:35px 7%;border-top:1px solid #d8d3c9;
+ display:flex;justify-content:space-between;
+ font-size:10px;letter-spacing:2px
+}
+@media(max-width:700px){
+ header{padding:0 5%;height:68px}
+ .logo{font-size:16px}
+ nav{gap:15px}
+ nav a{font-size:9px}
+ .intro{padding:55px 6% 30px}
+ .gallery{padding:15px 6% 60px;grid-template-columns:1fr 1fr;gap:12px}
+ .item img{height:260px}
+ footer{padding:25px 6%;gap:15px;flex-wrap:wrap}
+}
+</style>
+</head>
+<body>
+<header>
+ <a class="logo" href="index.html">ATHWAL.</a>
+ <nav>
+  <a href="index.html">HOME</a>
+  <a href="gallery.html">GALLERY</a>
+ </nav>
+</header>
+
+<section class="intro">
+ <small>THE VISUAL ARCHIVE · 2026</small>
+ <h1>The Collection.</h1>
+ <p>A visual expression of modern identity.<br>
+ Explore the world of ATHWAL WEAR.</p>
+</section>
+
+<main class="gallery">
+ <div class="item"><img src="look-01.jpg" alt="Look 01"><p>01 — MODERN ESSENTIALS</p></div>
+ <div class="item"><img src="look-02.jpg" alt="Look 02"><p>02 — STREET CULTURE</p></div>
+ <div class="item"><img src="look-03.jpg" alt="Look 03"><p>03 — DAILY UNIFORM</p></div>
+ <div class="item"><img src="look-04.jpg" alt="Look 04"><p>04 — NEW PERSPECTIVE</p></div>
+ <div class="item"><img src="look-05.jpg" alt="Look 05"><p>05 — MINIMAL FORM</p></div>
+ <div class="item"><img src="look-06.jpg" alt="Look 06"><p>06 — TIMELESS STYLE</p></div>
+</main>
+
+<footer>
+ <strong>ATHWAL WEAR.</strong>
+ <span>BEYOND ORDINARY · 2026</span>
+ <a href="index.html">BACK HOME ↑</a>
+</footer>
+</body>
+</html>
